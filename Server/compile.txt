@@ -1,0 +1,1 @@
+g++ main.cpp Game/24.cpp Socket/SocketServer.cpp Socket/SocketBase.cpp -lpthread -std=c++11
