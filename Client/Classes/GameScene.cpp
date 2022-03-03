@@ -939,13 +939,9 @@ bool PokerArea::init()
 				resultLabel->setColor(Color3B::RED);
 				_anotherPoker->_uiPoker->addChild(resultLabel);
 				//捕获
-				//cocos2dx-4.0写法，因为是从4.0搬到3.17.2的，为了和TankWar一样的引擎版本
-				/*utils::captureNode(_anotherPoker->_uiPoker, [&](Image* img) {
+				utils::captureNode(_anotherPoker->_uiPoker, [&](Image* img) {
 					Director::getInstance()->getTextureCache()->addImage(img, _currentPoker->getName() + '#' + _anotherPoker->getName());
-				});*/
-				Image* img = utils::captureNode(_anotherPoker->_uiPoker);
-				Director::getInstance()->getTextureCache()->addImage(img, _currentPoker->getName() + '#' + _anotherPoker->getName());
-
+					});
 				scheduleOnce([&](float dt) {
 					//不scheduleOnce得不到纹理
 					_anotherPoker->_stateList.erase(_anotherPoker->_stateList.begin(), _anotherPoker->_now);
