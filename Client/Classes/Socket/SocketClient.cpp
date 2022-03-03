@@ -42,8 +42,7 @@ void SocketClient::initNetwork()
 		return;
 	}
 	
-	if (!s_client->connectServer("47.108.154.203", 8888))
-	//if (!s_client->connectServer("192.168.43.192", 8888))
+	if (!s_client->connectServer("xxx", 1234))//填自己的服务器IP和端口
 	{
 		std::cout << "Client connect error" << std::endl;
 	}
