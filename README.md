@@ -2,10 +2,10 @@
 
 A mini muti-players online game which rule is to calculate number 24 by 4 pokers.
 
-# Environment
+# Tool
 Use cocos2dx-3.17.2 game engine.
 
-# make
+# Make
 step 1. Check and update your environment.
 
 step 2. Delete all files from "src" and import all files of dir "Class" to here.
